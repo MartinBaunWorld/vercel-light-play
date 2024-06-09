@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -rf $HOME/dist || true
+mkdir $HOME/dist
+
+echo Hello from our app > $HOME/dist/index.html
