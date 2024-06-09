@@ -1,0 +1,5 @@
+#!/bin/bash
+
+HOST=root@95.216.185.80
+
+ssh $HOST

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+HOST=root@95.216.185.80
+
+rsync \
+    -hzrtuv \
+    --copy-links \
+    --delete-before \
+    --omit-dir-times \
+    --exclude-from='.excludes.txt' \
+    . $HOST:app/

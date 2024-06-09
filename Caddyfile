@@ -1,0 +1,12 @@
+{
+	debug
+}
+
+vercel-light-play.martinbaun.com {
+	file_server
+	root * /root/compiled_app
+	handle /api/* {
+		reverse_proxy localhost:8080
+	}
+}
+
